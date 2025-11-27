@@ -5,7 +5,7 @@
 
 Компьютер хараа ашиглан тестийн хуудсыг автоматаар таньж, засах цогц систем. Тестийн хуудсыг тэгшлэх, хариулт таних, оноо тооцоолох, хувилбар шалгах зэрэг үйлдлүүдийг бүрэн автоматжуулсан.
 
-[Суулгах](#-installation) • [Ажиллах зарчим](#-how-it-works) • [Онцлог](#-key-features) • [Үр дүн](#-results-visualization)
+[Ажиллах зарчим](#-how-it-works) • [Онцлог](#-key-features) • [Үр дүн](#-results-visualization)
 
 ---
 
@@ -97,109 +97,6 @@
 
 11. **Нийт дүнгийн харьцуулалт**  
     3×4 хэмжээтэй мастер grid-д бүх үр дүнг харьцуулна.
-
----
-
-## Installation
-
-### Шаардлагатай зүйлс
-
-```bash
-Python 3.7+
-opencv-python >= 4.5.0
-numpy >= 1.19.0
-matplotlib >= 3.3.0
-scikit-learn >= 0.24.0
-pathlib (Python 3.4+ built-in)
-```
-
-### Суулгах заавар
-
-```bash
-# Repository-г clone хийх
-git clone https://github.com/iamurhope/OMR_Based_Automated_Exam_Grading_System.git
-
-# Хавтас руу орох
-cd OMR_Based_Automated_Exam_Grading_System
-
-# Шаардлагатай package суулгах
-pip install opencv-python numpy matplotlib scikit-learn
-
-# Эсвэл requirements файлаас
-pip install -r requirements.txt
-```
-
----
-
-## Хэрэглээ
-
-### Batch Processing Mode (10 оюутан нэгэн зэрэг)
-
-```python
-# Зураг файлуудыг бэлтгэх
-# 1.jpg, 2.jpg, ..., 11.jpg (оюутны тестууд)
-# shablom.jpg (хариултын загвар)
-
-# Программыг ажиллуулах
-python omr_grading_system.py
-```
-
-**Процесс:**
-1. Бүх зургуудыг perspective correct хийнэ → `corrected_*.jpg`
-2. Answer key боловсруулна → `corrected_shablom.jpg`
-3. 10 оюутныг засна
-4. Master comparison grid үүсгэнэ
-
-### Single Image Mode (Нэг оюутан засах)
-
-```python
-results = batch_process_omr_with_variants(
-    input_folder='.',
-    output_folder='omr_results',
-    answer_key_filename='corrected_shablom.jpg',
-    single_image='corrected_1.jpg',
-    student_name='Student_1'
-)
-```
-
-### Answer Key шалгах
-
-```python
-results = batch_process_omr_with_variants(
-    input_folder='.',
-    output_folder='test',
-    answer_key_filename='corrected_shablom.jpg',
-    single_image='corrected_shablom.jpg',
-    student_name='Answer_Key_Test'
-)
-```
-
----
-
-## Үр дүнгийн бүтэц
-
-Програм дараах хавтас, файлуудыг үүсгэнэ:
-
-```
-omr_results/
-├── comparisons/
-│   ├── Student_1_graded.png          # Засалттай визуал
-│   ├── Student_1_detection.png       # Bubble detection
-│   ├── Student_1_variant.png         # Variant detection
-│   └── Student_1_comparison.png      # Хариулт харьцуулалт
-│
-├── reports/
-│   ├── ANSWER_KEY.txt               # Хариултын загвар
-│   ├── Student_1_report.txt         # Дэлгэрэнгүй тайлан
-│   ├── OVERALL_SUMMARY.txt          # Нийт статистик
-│   └── results.json                 # JSON export
-│
-├── visualizations/
-│   ├── answer_key_detection.png     # Answer key bubble detection
-│   └── answer_key_variant.png       # Answer key variant
-│
-└── MASTER_COMPARISON_GRID.png       # 3x4 харьцуулалтын график
-```
 
 ---
 
