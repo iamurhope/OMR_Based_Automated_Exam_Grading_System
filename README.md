@@ -363,7 +363,6 @@ SUMMARY:
   ✗ Incorrect:  5 (10.0%)
   ○ Blank:      3 (6.0%)
 
-![](images/result.png)
 ================================================================================
 
 DETAILED BREAKDOWN:
@@ -376,6 +375,7 @@ Q#    Student    Correct    Status
 4     -          A          ○ blank
 ...
 ```
+![](images/result.png)
 
 ### Overall Summary Statistics
 
