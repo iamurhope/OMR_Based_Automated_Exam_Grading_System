@@ -1,64 +1,60 @@
 <div align="center">
 
-# 📝 OMR Based Automated Exam Grading System
+# OMR Based Automated Exam Grading System
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" /> <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" /> <img src="https://img.shields.io/badge/Computer_Vision-FF6F00?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
 
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
-<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
-<img src="https://img.shields.io/badge/Computer_Vision-FF6F00?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
+Компьютер хараа ашиглан тестийн хуудсыг автоматаар таньж, засах цогц систем. Тестийн хуудсыг тэгшлэх, хариулт таних, оноо тооцоолох, хувилбар шалгах зэрэг үйлдлүүдийг бүрэн автоматжуулсан.
 
-**Тестийн хуудсыг автоматаар тэгшилж, хариулт таних, оноо тооцоолох, хувилбар шалгах бүрэн шийдэл. 50 асуулт хүртэл дэмжих AI систем**
-
-[🚀 Суулгах](#-installation) • [📖 Ажиллах зарчим](#-how-it-works) • [🎯 Онцлог](#-key-features) • [📊 Үр дүн](#-results-visualization)
+[Ажиллах зарчим](#хэрхэн-ажилладаг) • [Онцлог](#-key-features) • [Үр дүн](#-results-visualization)
 
 ---
 
 </div>
 
-## ✨ Онцлог шинж чанарууд
+## Онцлог шинж чанарууд
 
 <table>
 <tr>
 <td width="50%">
 
-### 🎯 Автомат Боловсруулалт
-- ✅ **Ultra-Robust Paper Detection** - 9 өөр edge detection стратеги
-- ✅ **Perspective Transformation** - Дөрвөн цэгийн авто тэгшилгээ
-- ✅ **Auto-Rotation Detection** - 180° эргүүлэх шаардлагыг илрүүлнэ
-- ✅ **CLAHE Enhancement** - Гэрэл тохируулга
-- ✅ **Adaptive Thresholding** - Янз бүрийн гэрэлтүүлэгт тохирно
+### Автомат Боловсруулалт
+- **Ultra-Robust Paper Detection** - 9 өөр edge detection стратеги
+- **Perspective Transformation** - Дөрвөн цэгийн авто тэгшилгээ
+- **Auto-Rotation Detection** - 180° эргүүлэх шаардлагыг илрүүлнэ
+- **CLAHE Enhancement** - Гэрэл тохируулга
+- **Adaptive Thresholding** - Янз бүрийн гэрэлтүүлэгт тохирно
 
 </td>
 <td width="50%">
 
-### 📊 Ухаалаг Илрүүлэлт
-- ✅ **50 асуултын дэмжлэг** - 25x2 багана загвар
-- ✅ **Variant Validation** - A, B, C, D, E хувилбарын авто шалгалт
-- ✅ **Bubble Detection** - Circularity & intensity шинжилгээ
-- ✅ **Grid Organization** - Y-threshold бүлэглэх алгоритм
-- ✅ **Confidence Scoring** - Итгэлцлийн түвшин хэмжих
+### Ухаалаг Илрүүлэлт
+- **50 асуултын дэмжлэг** - 25x2 багана загвар
+- **Variant Validation** - A, B, C, D, E хувилбарын авто шалгалт
+- **Bubble Detection** - Circularity & intensity шинжилгээ
+- **Grid Organization** - Y-threshold бүлэглэх алгоритм
+- **Confidence Scoring** - Итгэлцлийн түвшин хэмжих
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-### 📝 Автомат Засалт
-- ✅ **Answer Key Processing** - Хариултын загвар боловсруулах
-- ✅ **Batch Grading** - 10 хүртэл оюутныг нэгэн зэрэг засах
-- ✅ **Variant Matching** - Зөв хувилбарыг шалгаж засах
-- ✅ **Visual Feedback** - Зөв/буруу харуулсан визуал үүсгэх
-- ✅ **Detailed Reports** - TXT & JSON тайлан гаргах
+### Автомат Засалт
+- **Answer Key Processing** - Хариултын загвар боловсруулах
+- **Batch Grading** - 10 хүртэл оюутныг нэгэн зэрэг засах
+- **Variant Matching** - Зөв хувилбарыг шалгаж засах
+- **Visual Feedback** - Зөв/буруу харуулсан визуал үүсгэх
+- **Detailed Reports** - TXT & JSON тайлан гаргах
 
 </td>
 <td width="50%">
 
-### 📈 Дэлгэрэнгүй Тайлан
-- ✅ **Score Statistics** - Дундаж, медиан, std deviation
-- ✅ **Master Comparison Grid** - 3x4 харьцуулалтын график
-- ✅ **Per-Question Analysis** - Асуулт бүрийн дэлгэрэнгүй
-- ✅ **Error Detection** - Хувилбар зөрүү илрүүлэлт
-- ✅ **JSON Export** - Програмаар ашиглах боломжтой
+### Дэлгэрэнгүй Тайлан
+- **Score Statistics** - Дундаж, медиан, std deviation
+- **Master Comparison Grid** - 3x4 харьцуулалтын график
+- **Per-Question Analysis** - Асуулт бүрийн дэлгэрэнгүй
+- **Error Detection** - Хувилбар зөрүү илрүүлэлт
+- **JSON Export** - Програмаар ашиглах боломжтой
 
 </td>
 </tr>
@@ -66,147 +62,47 @@
 
 ---
 
-## 🔄 Хэрхэн ажилладаг
+## Ажиллах зарчим
 
-```mermaid
-graph TB
-    A[📷 Тестийн зураг<br/>1-11.jpg] --> B[🔧 Paper Detection<br/>9 strategies]
-    B --> C[📐 Perspective Transform<br/>4-point warping]
-    C --> D[🔄 Orientation Check<br/>180° rotation detect]
-    D --> E[✂️ Region Extraction<br/>Question + Variant areas]
-    E --> F[🎯 Bubble Detection<br/>Circularity + Intensity]
-    F --> G[📊 Grid Organization<br/>25 rows × 2 columns]
-    G --> H[🔍 Variant Detection<br/>A/B/C/D/E validation]
-    H --> I{Variant Match?}
-    I -->|Yes| J[✅ Grade Answers<br/>Compare with key]
-    I -->|No| K[❌ Variant Mismatch<br/>Skip grading]
-    J --> L[📈 Generate Reports<br/>TXT + JSON + Images]
-    K --> L
-    L --> M[🎨 Master Grid<br/>3×4 comparison]
-    
-    style A fill:#e1f5ff
-    style B fill:#fff3e0
-    style C fill:#f3e5f5
-    style D fill:#e8f5e9
-    style E fill:#fff9c4
-    style F fill:#fce4ec
-    style G fill:#e0f2f1
-    style H fill:#ffe0b2
-    style I fill:#f8bbd0
-    style J fill:#c8e6c9
-    style K fill:#ffcdd2
-    style L fill:#b2dfdb
-    style M fill:#f0f4c3
-```
+1. **Шалгалтын хуудас оруулах**  
+   Систем нь шалгалтын хуудасны зургийг (жишээ: `1-10.jpg`) авч ажиллана.
 
----
+2. **Хуудас илрүүлэх**  
+   Зургийн доторх хуудасыг олох олон стратеги ашиглана.
 
-## 🚀 Installation
+3. **Перспектив засварлах**  
+   Хуудас шулуун, тэгш харагдах байдлаар засварлана.
 
-### Шаардлагатай зүйлс
+4. **Чиглэл шалгах**  
+   Хуудас буруу эргэлттэй байвал зөв эргүүлэх.
 
-```bash
-Python 3.7+
-opencv-python >= 4.5.0
-numpy >= 1.19.0
-matplotlib >= 3.3.0
-scikit-learn >= 0.24.0
-pathlib (Python 3.4+ built-in)
-```
+5. **Бүсийг ялгах**  
+   Асуулт болон хувилбар бүсүүдийг тодорхойлно.
 
-### Суулгах заавар
+6. **Бөмбөлөг/хариу илрүүлэх**  
+   Бөмбөлгийн хэлбэр ба өнгийн нягт байдлаар бөглөгдсөн хариуг таньж авна.
 
-```bash
-# Repository-г clone хийх
-git clone https://github.com/iamurhope/OMR_Based_Automated_Exam_Grading_System.git
+7. **Хариуг эрэмбэлэх**  
+   25 мөр × 2 багана хэлбэрээр хариуг зохион байгуулна.
 
-# Хавтас руу орох
-cd OMR_Based_Automated_Exam_Grading_System
+8. **Хувилбарыг шалгах**  
+   A/B/C/D/E хувилбарыг баталгаажуулна.  
 
-# Шаардлагатай package суулгах
-pip install opencv-python numpy matplotlib scikit-learn
+9. **Шалгалт хийх**  
+   Хэрвээ хувилбар таарч байвал хариуг үнэлнэ.  
+   Хувилбар таарахгүй бол уг хариуг алгасна.
 
-# Эсвэл requirements файлаас
-pip install -r requirements.txt
-```
+10. **Тайлан гаргах**  
+    TXT, JSON, болон дүрсээр дэлгэрэнгүй тайлан бэлтгэнэ.
+
+11. **Нийт дүнгийн харьцуулалт**  
+    3×4 хэмжээтэй мастер grid-д бүх үр дүнг харьцуулна.
 
 ---
 
-## 💻 Хэрэглээ
+## Онцлох Функцууд
 
-### 1️⃣ Batch Processing Mode (10 оюутан нэгэн зэрэг)
-
-```python
-# Зураг файлуудыг бэлтгэх
-# 1.jpg, 2.jpg, ..., 11.jpg (оюутны тестууд)
-# shablom.jpg (хариултын загвар)
-
-# Программыг ажиллуулах
-python omr_grading_system.py
-```
-
-**Процесс:**
-1. Бүх зургуудыг perspective correct хийнэ → `corrected_*.jpg`
-2. Answer key боловсруулна → `corrected_shablom.jpg`
-3. 10 оюутныг засна
-4. Master comparison grid үүсгэнэ
-
-### 2️⃣ Single Image Mode (Нэг оюутан засах)
-
-```python
-results = batch_process_omr_with_variants(
-    input_folder='.',
-    output_folder='omr_results',
-    answer_key_filename='corrected_shablom.jpg',
-    single_image='corrected_1.jpg',
-    student_name='Student_1'
-)
-```
-
-### 3️⃣ Answer Key шалгах
-
-```python
-results = batch_process_omr_with_variants(
-    input_folder='.',
-    output_folder='test',
-    answer_key_filename='corrected_shablom.jpg',
-    single_image='corrected_shablom.jpg',
-    student_name='Answer_Key_Test'
-)
-```
-
----
-
-## 📊 Үр дүнгийн бүтэц
-
-Програм дараах хавтас, файлуудыг үүсгэнэ:
-
-```
-omr_results/
-├── comparisons/
-│   ├── Student_1_graded.png          # Засалттай визуал
-│   ├── Student_1_detection.png       # Bubble detection
-│   ├── Student_1_variant.png         # Variant detection
-│   └── Student_1_comparison.png      # Хариулт харьцуулалт
-│
-├── reports/
-│   ├── ANSWER_KEY.txt               # Хариултын загвар
-│   ├── Student_1_report.txt         # Дэлгэрэнгүй тайлан
-│   ├── OVERALL_SUMMARY.txt          # Нийт статистик
-│   └── results.json                 # JSON export
-│
-├── visualizations/
-│   ├── answer_key_detection.png     # Answer key bubble detection
-│   └── answer_key_variant.png       # Answer key variant
-│
-└── MASTER_COMPARISON_GRID.png       # 3x4 харьцуулалтын график
-```
-
----
-
-## 🎯 Онцлох Функцууд
-
-### 1️⃣ Ultra-Robust Paper Detection
+### Ultra-Robust Paper Detection
 9 өөр edge detection стратеги ашиглаж тестийн хуудсыг илрүүлнэ:
 - **CLAHE enhancement** - Adaptive histogram equalization
 - **Multiple Canny edges** - 5 өөр threshold combination
@@ -221,7 +117,7 @@ score = (area ** 0.9) * (rectangularity ** 1.4) *
         (edge_penalty ** 1.8) * left_edge_bonus
 ```
 
-### 2️⃣ Intelligent Bubble Detection
+### Intelligent Bubble Detection
 Circularity болон intensity шинжилгээ:
 - **Size filtering**: 80-2500 pixels area
 - **Aspect ratio check**: 0.4-2.0 range
@@ -229,7 +125,7 @@ Circularity болон intensity шинжилгээ:
 - **Interior intensity**: Center region darkness check
 - **Duplicate removal**: Position-based filtering
 
-### 3️⃣ Grid Organization Algorithm
+### Grid Organization Algorithm
 Y-threshold ашиглан 25 мөр × 2 багана бүлэглэх:
 ```python
 y_threshold = max(18, avg_bubble_height * 0.75)
@@ -238,14 +134,14 @@ y_threshold = max(18, avg_bubble_height * 0.75)
 - Баганы ялгалт - Том зайгаар split
 - 5 сонголттой асуулт бүрээс
 
-### 4️⃣ Variant Validation System
+### Variant Validation System
 A, B, C, D, E хувилбарыг шалгаж таньж:
 - Top-right region дээр хайна
 - Contrast-based detection
 - Confidence scoring
 - **VARIANT MISMATCH DETECTION** - Буруу хувилбарыг автоматаар илрүүлнэ
 
-### 5️⃣ Orientation Detection
+### Orientation Detection
 3 voting mechanism ашиглан 180° эргэх шаардлагыг шалгана:
 - **Content density** - Top vs bottom текст хэмжээ
 - **Bubble distribution** - Хаана бөмбөлөг их байна
@@ -253,7 +149,7 @@ A, B, C, D, E хувилбарыг шалгаж таньж:
 
 ---
 
-## 📈 Технологи & Алгоритм
+## Технологи & Алгоритм
 
 <div align="center">
 
@@ -271,7 +167,7 @@ A, B, C, D, E хувилбарыг шалгаж таньж:
 
 </div>
 
-### 🔬 Алгоритмын Онцлог
+### Алгоритмын Онцлог
 
 **Paper Detection Scoring:**
 ```python
@@ -345,7 +241,7 @@ x_end = int(w * 0.92)    # Right: 92%
 
 ---
 
-## 📋 Тайлангийн Жишээ
+## Example report
 
 ### Student Report (TXT формат)
 
@@ -376,6 +272,7 @@ Q#    Student    Correct    Status
 4     -          A          ○ blank
 ...
 ```
+![](images/result.png)
 
 ### Overall Summary Statistics
 
@@ -388,101 +285,3 @@ STATISTICS:
   Median score: 39.0/50
   Standard deviation: 8.3%
 ```
-
-### JSON Export Format
-
-```json
-{
-  "timestamp": "2025-11-27T14:30:00",
-  "mode": "batch",
-  "answer_key": {
-    "variant": "A",
-    "answers": {
-      "1": "A",
-      "2": "B",
-      "3": "C",
-      ...
-    },
-    "confidence": 0.95
-  },
-  "results": [
-    {
-      "student": "Student_1",
-      "status": "SUCCESS",
-      "correct": 42,
-      "incorrect": 5,
-      "blank": 3,
-      "percentage": 84.0,
-      "variant": "A",
-      "graded": true
-    }
-  ]
-}
-```
-
----
-
-Хувь нэмэр оруулахыг хүсвэл:
-
-1. 🍴 Fork хийх
-2. 🌿 Feature branch үүсгэх (`git checkout -b feature/AmazingFeature`)
-3. 💾 Commit хийх (`git commit -m 'Add AmazingFeature'`)
-4. 📤 Push хийх (`git push origin feature/AmazingFeature`)
-5. 🔀 Pull Request үүсгэх
-
----
-
-## 📝 License
-
-Энэ төсөл MIT License-ээр түгээгдсэн. Дэлгэрэнгүй мэдээлэл `LICENSE` файлаас үзнэ үү.
-
----
-
-## 📧 Contact & Support
-
-**Project Maintainer:** [@iamurhope](https://github.com/iamurhope)
-
-**Project Link:** [OMR Based Automated Exam Grading System](https://github.com/iamurhope/OMR_Based_Automated_Exam_Grading_System)
-
-### 🐛 Асуудал тулгарвал
-
-1. Issues табаас шинэ issue үүсгэх
-2. Дараах мэдээллийг оруулах:
-   - Python version
-   - OpenCV version  
-   - Алдааны мессеж
-   - Sample зураг (боломжтой бол)
-   - Консол дахь output
-
-### 💡 Санал хүсэлт
-
-Feature request эсвэл сайжруулах санал байвал Issues табаас enhancement label-тэй issue үүсгэнэ үү.
-
----
-
-## 🙏 Талархал
-
-Энэ төсөл дараах нээлттэй эхийн номын сангуудыг ашигласан:
-
-- **OpenCV** - Computer Vision сан
-- **NumPy** - Математик тооцоолол
-- **Matplotlib** - Визуализаци
-- **scikit-learn** - DBSCAN clustering санаанаас
-
----
-
-<div align="center">
-
-### ⭐ Таалагдвал star өгөөрэй!
-
-**Made with ❤️ using Computer Vision & Machine Learning**
-
-![Visitors](https://visitor-badge.laobi.icu/badge?page_id=iamurhope.omr-grading)
-![GitHub stars](https://img.shields.io/github/stars/iamurhope/OMR_Based_Automated_Exam_Grading_System?style=social)
-![GitHub forks](https://img.shields.io/github/forks/iamurhope/OMR_Based_Automated_Exam_Grading_System?style=social)
-
----
-
-**Боловсролд хурдан, найдвартай автоматжуулалт** 🎓
-
-</div>
