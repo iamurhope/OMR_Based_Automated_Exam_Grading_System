@@ -388,4 +388,4 @@ STATISTICS:
   Median score: 39.0/50
   Standard deviation: 8.3%
 ```
-![](images/download.png)
+![](images/result.png)
