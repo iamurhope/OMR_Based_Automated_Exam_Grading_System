@@ -1,6 +1,9 @@
 <div align="center">
-📝 OMR-д суурилсан Автомат Шалгалт Засах Систем
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" /> <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" /> <img src="https://img.shields.io/badge/Computer_Vision-FF6F00?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
+#📝 OMR-д суурилсан Автомат Шалгалт Засах Систем
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" /> 
+<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" /> 
+<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" /> 
+<img src="https://img.shields.io/badge/Computer_Vision-FF6F00?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
 
 9 аргаас хуудас илрүүлэлт, 4-Point Perspective Transform, бөглөсөн бөмбөлгийн танилт, A–E хувилбар баталгаажуулалт, 50 асуултын автомат үнэлгээ хийдэг бүрэн AI шалгалт засах систем
 
