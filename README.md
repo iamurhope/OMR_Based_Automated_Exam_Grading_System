@@ -1,16 +1,22 @@
 <div align="center">
+<<<<<<< HEAD
+
+# OMR-д суурилсан Автомат Шалгалт Засах Систем
+
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
+<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
+=======
 OMR Based Automated Exam Grading System
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
 <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
 <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
+>>>>>>> 90b473d749c323da8037703583f34d2407c12f02
 <img src="https://img.shields.io/badge/Computer_Vision-FF6F00?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
 
-9 аргаас хуудас илрүүлэлт, 4-Point Perspective Transform, бөглөсөн бөмбөлгийн танилт, A–E хувилбар баталгаажуулалт, 50 асуултын автомат үнэлгээ хийдэг бүрэн AI шалгалт засах систем
+**Автомат тэгшилж, бөглөсөн бөмбөлөг илрүүлэлт, оноо бодолт, хувилбар шалгалт, 50 асуултын автомат засалт бүхий бүрэн AI систем**
 
-🚀 Эхлэх
- • 📖 Хэрхэн ажилладаг
- • 🎯 Онцлог
- • 📊 Үр дүн
+[🚀 Эхлэх](#-installation) • [📖 Хэрхэн ажилладаг](#-how-it-works) • [🎯 Онцлог](#-key-features) • [📊 Үр дүн](#-results-visualization)
 
 ---
 
@@ -22,21 +28,22 @@ OMR Based Automated Exam Grading System
 <tr>
 <td width="50%">
 
-### 🎯 Хуудасны урьдчилсан боловсруулалт
-- Тестийн хуудас илрүүлэх 9 арга, оноо өгөх систем
-- 4 өнцгийн координатаар хуудас тэгшлэх (Perspective transform)
-- 180° эргэх эсэхийг автоматаар шийдэх
-- Гэрэлтүүлэг жигдрүүлэх (CLAHE + Adaptive threshold)
+### 🎯 Автомат Боловсруулалт
+- ✅ **Ultra-Robust Paper Detection** - 9 өөр edge detection стратеги
+- ✅ **Perspective Transformation** - Дөрвөн цэгийн авто тэгшилгээ
+- ✅ **Auto-Rotation Detection** - 180° эргүүлэх шаардлагыг илрүүлнэ
+- ✅ **CLAHE Enhancement** - Гэрэл тохируулга
+- ✅ **Adaptive Thresholding** - Янз бүрийн гэрэлтүүлэгт тохирно
 
 </td>
 <td width="50%">
 
-### 🔍 Хариу танилт ба баталгаажуулалт
-- 50 асуултыг 25 мөр × 2 баганаар зохион байгуулах
-- A–E хувилбарын бөглөсөн хэсгийг автоматаар шалгаж баталгаажуулах
-- Бөмбөлөг илрүүлэх (талбай, дугуй хэлбэр, харанхуй эсэх шинжилгээ)
-- Мөр ангилах (Y-координатын босгоор бүлэглэх)
-- Итгэлцлийн үнэлгээ (Confidence score)
+### 📊 Ухаалаг Илрүүлэлт
+- ✅ **50 асуултын дэмжлэг** - 25x2 багана загвар
+- ✅ **Variant Validation** - A, B, C, D, E хувилбарын авто шалгалт
+- ✅ **Bubble Detection** - Circularity & intensity шинжилгээ
+- ✅ **Grid Organization** - Y-threshold бүлэглэх алгоритм
+- ✅ **Confidence Scoring** - Итгэлцлийн түвшин хэмжих
 
 </td>
 </tr>
@@ -253,7 +260,7 @@ A, B, C, D, E хувилбарыг шалгаж таньж:
 
 ---
 
-## Технологи & Алгоритм
+## 📈 Технологи & Алгоритм
 
 <div align="center">
 
@@ -271,7 +278,7 @@ A, B, C, D, E хувилбарыг шалгаж таньж:
 
 </div>
 
-###  Алгоритмын Онцлог
+### 🔬 Алгоритмын Онцлог
 
 **Paper Detection Scoring:**
 ```python
@@ -292,6 +299,7 @@ if min_intensity < 180:
     confidence = 0.9
 elif min_intensity < 195 and contrast >= 5:
     confidence = 0.85
+# ... 6 түвшний threshold
 ```
 
 ---
@@ -326,7 +334,7 @@ TOTAL_QUESTIONS = 50  # Нийт 50 асуулт
 CHOICES_PER_Q = 5     # Асуулт бүр 5 сонголт (A-E)
 ```
 
-### Region тайралт
+### Region Extraction
 
 ```python
 # Question region
@@ -344,7 +352,7 @@ x_end = int(w * 0.92)    # Right: 92%
 
 ---
 
-## Example report
+## 📋 Тайлангийн Жишээ
 
 ### Student Report (TXT формат)
 
@@ -387,3 +395,15 @@ STATISTICS:
   Median score: 39.0/50
   Standard deviation: 8.3%
 ```
+<img src="https://drive.google.com/file/d/1C4iE54gav9bz6DQgINRwaMr_QsJoBdOo/view?usp=sharing" />
+
+### 🐛 Асуудал тулгарвал
+
+1. Issues табаас шинэ issue үүсгэх
+2. Дараах мэдээллийг оруулах:
+   - Python version
+   - OpenCV version  
+   - Алдааны мессеж
+   - Sample зураг (боломжтой бол)
+   - Консол дахь output
+-
