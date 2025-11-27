@@ -1,90 +1,70 @@
 <div align="center">
 
-📝 OMR Based Automated Exam Grading System
+# OMR Based Automated Exam Grading System
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" /> <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" /> <img src="https://img.shields.io/badge/Computer_Vision-FF6F00?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
 
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
-<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
-<img src="https://img.shields.io/badge/Computer_Vision-FF6F00?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
+Компьютер хараа ашиглан тестийн хуудсыг автоматаар таньж, засах цогц систем. Тестийн хуудсыг тэгшлэх, хариулт таних, оноо тооцоолох, хувилбар шалгах зэрэг үйлдлүүдийг бүрэн автоматжуулсан.
 
-Компьютер хараа (Computer Vision) ашиглан тестийн хуудсыг автоматаар таньж, засах цогц систем.
-Тестийн хуудсыг тэгшлэх, хариулт таних, оноо тооцоолох, хувилбар шалгах зэрэг үйлдлүүдийг бүрэн автоматжуулсан. 50 хүртэлх асуулттай тестийг дэмжинэ.
+[🚀 Суулгах](#-installation) • [📖 Ажиллах зарчим](#-how-it-works) • [🎯 Онцлог](#-key-features) • [📊 Үр дүн](#-results-visualization)
 
-🚀 Суулгах • 📖 Ажиллах зарчим • 🎯 Онцлог • 📊 Үр дүн
+---
 
 </div>
 
-✨ Онцлог шинж чанарууд
+## Онцлог шинж чанарууд
 
 <table>
 <tr>
 <td width="50%">
 
-🎯 Автомат Боловсруулалт
-
-Robust Paper Detection: Ирмэг илрүүлэх (Edge detection) 9 төрлийн стратеги ашиглан хуудсыг өндөр нарийвчлалтай танина.
-
-Perspective Transformation: Гажилттай зургийн өнцгийг автоматаар засварлаж, тэгшилнэ (4-point warping).
-
-Auto-Rotation: Хуудас 180° эргэсэн байвал автоматаар илрүүлж, зөв чиглэлд оруулна.
-
-CLAHE Enhancement: Гэрэлтүүлгийн ялгаатай байдлыг (Contrast) сайжруулна.
-
-Adaptive Thresholding: Орчны гэрэлтүүлгээс үл хамааран дүрсийг тод ялгана.
+### 🎯 Автомат Боловсруулалт
+- ✅ **Ultra-Robust Paper Detection** - 9 өөр edge detection стратеги
+- ✅ **Perspective Transformation** - Дөрвөн цэгийн авто тэгшилгээ
+- ✅ **Auto-Rotation Detection** - 180° эргүүлэх шаардлагыг илрүүлнэ
+- ✅ **CLAHE Enhancement** - Гэрэл тохируулга
+- ✅ **Adaptive Thresholding** - Янз бүрийн гэрэлтүүлэгт тохирно
 
 </td>
 <td width="50%">
 
-📊 Ухаалаг Танилт
-
-50 Q Support: 25 мөр × 2 багана бүхий 50 асуулттай загварыг дэмжинэ.
-
-Variant Validation: Тестийн хувилбар (A, B, C, D, E)-ыг автоматаар танина.
-
-Bubble Detection: Хариултын дугуйг хэлбэр (Circularity) болон тодрол (Intensity) дээр үндэслэн ялгана.
-
-Grid Organization: Y-тэнхлэгийн дагуу босго утгаар бүлэглэх алгоритм.
-
-Confidence Scoring: Танилтын нарийвчлалыг хувиар илэрхийлнэ.
+### 📊 Ухаалаг Илрүүлэлт
+- ✅ **50 асуултын дэмжлэг** - 25x2 багана загвар
+- ✅ **Variant Validation** - A, B, C, D, E хувилбарын авто шалгалт
+- ✅ **Bubble Detection** - Circularity & intensity шинжилгээ
+- ✅ **Grid Organization** - Y-threshold бүлэглэх алгоритм
+- ✅ **Confidence Scoring** - Итгэлцлийн түвшин хэмжих
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-📝 Автомат Дүгнэлт
-
-Answer Key Processing: Багшийн зөв хариултын загварыг автоматаар уншина.
-
-Batch Grading: Олон оюутны материалыг (жишээ нь 10+) нэг дор, дарааллаар засах боломжтой.
-
-Variant Matching: Оюутны хувилбар болон түлхүүр хариултын хувилбар таарч буйг шалгана.
-
-Visual Feedback: Зөв болон буруу хариултыг зураг дээр өнгөөр ялгаж харуулна.
-
-Detailed Reports: Үр дүнг TXT болон JSON форматаар тайлагнана.
+### 📝 Автомат Засалт
+- ✅ **Answer Key Processing** - Хариултын загвар боловсруулах
+- ✅ **Batch Grading** - 10 хүртэл оюутныг нэгэн зэрэг засах
+- ✅ **Variant Matching** - Зөв хувилбарыг шалгаж засах
+- ✅ **Visual Feedback** - Зөв/буруу харуулсан визуал үүсгэх
+- ✅ **Detailed Reports** - TXT & JSON тайлан гаргах
 
 </td>
 <td width="50%">
 
-📈 Тайлан ба Статистик
-
-Statistics: Дундаж оноо, медиан, стандарт хазайлт зэрэг статистик үзүүлэлтүүд.
-
-Master Comparison Grid: 3x4 харьцуулалтын зураглал үүсгэнэ.
-
-Per-Question Analysis: Асуулт бүрийн гүйцэтгэлийг нарийвчлан харуулна.
-
-Error Detection: Хувилбарын зөрүү болон бөглөөгүй орхисон алдааг илрүүлнэ.
-
-JSON Export: Өгөгдлийн бааз эсвэл веб системд ашиглахад бэлэн JSON гаралт.
+### 📈 Дэлгэрэнгүй Тайлан
+- ✅ **Score Statistics** - Дундаж, медиан, std deviation
+- ✅ **Master Comparison Grid** - 3x4 харьцуулалтын график
+- ✅ **Per-Question Analysis** - Асуулт бүрийн дэлгэрэнгүй
+- ✅ **Error Detection** - Хувилбар зөрүү илрүүлэлт
+- ✅ **JSON Export** - Програмаар ашиглах боломжтой
 
 </td>
 </tr>
 </table>
 
-🔄 Хэрхэн ажилладаг
+---
 
+## 🔄 Хэрхэн ажилладаг
+
+```mermaid
 graph TB
     A[📷 Тестийн зураг<br/>1-11.jpg] --> B[🔧 Paper Detection<br/>9 strategies]
     B --> C[📐 Perspective Transform<br/>4-point warping]
@@ -100,183 +80,309 @@ graph TB
     K --> L
     L --> M[🎨 Master Grid<br/>3×4 comparison]
     
-    style A fill:#e1f5ff,stroke:#01579b
-    style B fill:#fff3e0,stroke:#e65100
-    style C fill:#f3e5f5,stroke:#4a148c
-    style D fill:#e8f5e9,stroke:#1b5e20
-    style E fill:#fff9c4,stroke:#fbc02d
-    style F fill:#fce4ec,stroke:#880e4f
-    style G fill:#e0f2f1,stroke:#004d40
-    style H fill:#ffe0b2,stroke:#e65100
-    style I fill:#f8bbd0,stroke:#880e4f
-    style J fill:#c8e6c9,stroke:#1b5e20
-    style K fill:#ffcdd2,stroke:#b71c1c
-    style L fill:#b2dfdb,stroke:#004d40
-    style M fill:#f0f4c3,stroke:#827717
+    style A fill:#e1f5ff
+    style B fill:#fff3e0
+    style C fill:#f3e5f5
+    style D fill:#e8f5e9
+    style E fill:#fff9c4
+    style F fill:#fce4ec
+    style G fill:#e0f2f1
+    style H fill:#ffe0b2
+    style I fill:#f8bbd0
+    style J fill:#c8e6c9
+    style K fill:#ffcdd2
+    style L fill:#b2dfdb
+    style M fill:#f0f4c3
+```
 
+---
 
-🚀 Installation
+## 🚀 Installation
 
-Шаардлагатай сангууд (Prerequisites)
+### Шаардлагатай зүйлс
 
+```bash
 Python 3.7+
-
 opencv-python >= 4.5.0
-
 numpy >= 1.19.0
-
 matplotlib >= 3.3.0
-
 scikit-learn >= 0.24.0
+pathlib (Python 3.4+ built-in)
+```
 
-Суулгах заавар
+### Суулгах заавар
 
-# Repository-г татаж авах (Clone)
-git clone [https://github.com/iamurhope/OMR_Based_Automated_Exam_Grading_System.git](https://github.com/iamurhope/OMR_Based_Automated_Exam_Grading_System.git)
+```bash
+# Repository-г clone хийх
+git clone https://github.com/iamurhope/OMR_Based_Automated_Exam_Grading_System.git
 
-# Төслийн хавтас руу шилжих
+# Хавтас руу орох
 cd OMR_Based_Automated_Exam_Grading_System
 
-# Шаардлагатай сангуудыг суулгах
-pip install -r requirements.txt
-
-# Эсвэл гараар суулгах бол:
+# Шаардлагатай package суулгах
 pip install opencv-python numpy matplotlib scikit-learn
 
+# Эсвэл requirements файлаас
+pip install -r requirements.txt
+```
 
-💻 Хэрэглээ
+---
 
-1️⃣ Batch Processing Mode (Олноор нь засах)
+## 💻 Хэрэглээ
 
-Олон оюутны материалыг нэг дор боловсруулах үндсэн горим.
+### 1️⃣ Batch Processing Mode (10 оюутан нэгэн зэрэг)
 
-# Зураг файлуудыг бэлтгэх:
-# 1.jpg, 2.jpg ... (Оюутны материалууд)
-# shablom.jpg (Багшийн зөв хариултын загвар)
+```python
+# Зураг файлуудыг бэлтгэх
+# 1.jpg, 2.jpg, ..., 11.jpg (оюутны тестууд)
+# shablom.jpg (хариултын загвар)
 
 # Программыг ажиллуулах
 python omr_grading_system.py
+```
 
+**Процесс:**
+1. Бүх зургуудыг perspective correct хийнэ → `corrected_*.jpg`
+2. Answer key боловсруулна → `corrected_shablom.jpg`
+3. 10 оюутныг засна
+4. Master comparison grid үүсгэнэ
 
-Процесс:
+### 2️⃣ Single Image Mode (Нэг оюутан засах)
 
-Бүх зургийн гажилтыг засч corrected_*.jpg нэрээр хадгална.
-
-Answer key (загвар) хуудсыг уншиж боловсруулна.
-
-Оюутнуудын материалыг засаж, оноог тооцно.
-
-Үр дүнг нэгтгэсэн тайлан болон харьцуулсан зураг үүсгэнэ.
-
-2️⃣ Single Image Mode (Нэг зураг засах)
-
-Туршилтын журмаар эсвэл нэг оюутныг засах үед ашиглана.
-
+```python
 results = batch_process_omr_with_variants(
     input_folder='.',
     output_folder='omr_results',
     answer_key_filename='corrected_shablom.jpg',
-    single_image='corrected_1.jpg', # Зөвхөн энэ зургийг засна
+    single_image='corrected_1.jpg',
     student_name='Student_1'
 )
+```
 
+### 3️⃣ Answer Key шалгах
 
-📊 Үр дүнгийн бүтэц
+```python
+results = batch_process_omr_with_variants(
+    input_folder='.',
+    output_folder='test',
+    answer_key_filename='corrected_shablom.jpg',
+    single_image='corrected_shablom.jpg',
+    student_name='Answer_Key_Test'
+)
+```
 
-Програм ажиллаж дууссаны дараа omr_results хавтас үүсэх бөгөөд дотроо дараах бүтэцтэй байна:
+---
 
+## 📊 Үр дүнгийн бүтэц
+
+Програм дараах хавтас, файлуудыг үүсгэнэ:
+
+```
 omr_results/
-├── comparisons/                  # Визуал үр дүнгүүд
-│   ├── Student_1_graded.png      # Зөв/Бурууг тэмдэглэсэн эцсийн зураг
-│   ├── Student_1_detection.png   # Хариултын дугуйг хэрхэн таньсан байдал
-│   ├── Student_1_variant.png     # Хувилбар танилт
-│   └── Student_1_comparison.png  # Хариултын харьцуулалт
+├── comparisons/
+│   ├── Student_1_graded.png          # Засалттай визуал
+│   ├── Student_1_detection.png       # Bubble detection
+│   ├── Student_1_variant.png         # Variant detection
+│   └── Student_1_comparison.png      # Хариулт харьцуулалт
 │
-├── reports/                      # Текст тайлангууд
-│   ├── ANSWER_KEY.txt            # Зөв хариултын задаргаа
-│   ├── Student_1_report.txt      # Оюутан бүрийн дэлгэрэнгүй тайлан
-│   ├── OVERALL_SUMMARY.txt       # Ангийн нэгдсэн статистик
-│   └── results.json              # Програмчлалд ашиглах өгөгдөл
+├── reports/
+│   ├── ANSWER_KEY.txt               # Хариултын загвар
+│   ├── Student_1_report.txt         # Дэлгэрэнгүй тайлан
+│   ├── OVERALL_SUMMARY.txt          # Нийт статистик
+│   └── results.json                 # JSON export
 │
-├── visualizations/               # Системийн оношилгооны зургууд
-│   ├── answer_key_detection.png
-│   └── answer_key_variant.png
+├── visualizations/
+│   ├── answer_key_detection.png     # Answer key bubble detection
+│   └── answer_key_variant.png       # Answer key variant
 │
-└── MASTER_COMPARISON_GRID.png    # Бүх үр дүнг нэгтгэсэн хавтан зураг
+└── MASTER_COMPARISON_GRID.png       # 3x4 харьцуулалтын график
+```
 
+---
 
-🎯 Технологи & Алгоритм
+## 🎯 Онцлох Функцууд
 
-Компонент
+### 1️⃣ Ultra-Robust Paper Detection
+9 өөр edge detection стратеги ашиглаж тестийн хуудсыг илрүүлнэ:
+- **CLAHE enhancement** - Adaptive histogram equalization
+- **Multiple Canny edges** - 5 өөр threshold combination
+- **Threshold methods** - OTSU, Binary, Adaptive
+- **Sobel gradients** - Edge direction detection
+- **Scoring system** - Area, rectangularity, angle, center position
 
-Технологи
+```python
+# Дөрвөн өнцөг илрүүлэлтийн score тооцоолол
+score = (area ** 0.9) * (rectangularity ** 1.4) * 
+        (angle_score ** 1.1) * (center_score ** 0.6) * 
+        (edge_penalty ** 1.8) * left_edge_bonus
+```
 
-Хэрэглээ
+### 2️⃣ Intelligent Bubble Detection
+Circularity болон intensity шинжилгээ:
+- **Size filtering**: 80-2500 pixels area
+- **Aspect ratio check**: 0.4-2.0 range
+- **Circularity score**: `4π × area / perimeter²`
+- **Interior intensity**: Center region darkness check
+- **Duplicate removal**: Position-based filtering
 
-Paper Detection
+### 3️⃣ Grid Organization Algorithm
+Y-threshold ашиглан 25 мөр × 2 багана бүлэглэх:
+```python
+y_threshold = max(18, avg_bubble_height * 0.75)
+```
+- Мөр илрүүлэлт - Y координатаар
+- Баганы ялгалт - Том зайгаар split
+- 5 сонголттой асуулт бүрээс
 
-OpenCV Canny, CLAHE
+### 4️⃣ Variant Validation System
+A, B, C, D, E хувилбарыг шалгаж таньж:
+- Top-right region дээр хайна
+- Contrast-based detection
+- Confidence scoring
+- **VARIANT MISMATCH DETECTION** - Буруу хувилбарыг автоматаар илрүүлнэ
 
-Хуудас илрүүлэх 9 шатлалт стратеги
+### 5️⃣ Orientation Detection
+3 voting mechanism ашиглан 180° эргэх шаардлагыг шалгана:
+- **Content density** - Top vs bottom текст хэмжээ
+- **Bubble distribution** - Хаана бөмбөлөг их байна
+- **Edge density** - Ирмэгийн тархалт
 
-Perspective
+---
 
-getPerspectiveTransform
+## 📈 Технологи & Алгоритм
 
-4 өнцгийг олж зургийг тэгшлэх
+<div align="center">
 
-Bubble Detection
+| Компонент | Технологи | Хэрэглээ |
+|-----------|----------|----------|
+| **Paper Detection** | OpenCV Canny, CLAHE, Morphology | 9 стратеги, scoring system |
+| **Perspective Transform** | `getPerspectiveTransform` | 4-point warping + padding |
+| **Bubble Detection** | Adaptive Threshold, Contours | Circularity + intensity |
+| **Grid Organization** | DBSCAN-inspired clustering | Y-threshold grouping |
+| **Variant Detection** | ROI extraction, Contour analysis | Top-right region scan |
+| **Answer Matching** | NumPy array comparison | Intensity-based selection |
+| **Grading Logic** | Python dictionaries | Key-value comparison |
+| **Visualization** | Matplotlib + OpenCV drawing | Multi-panel grids |
+| **Reports** | JSON + TXT export | Structured data output |
 
-Adaptive Threshold, Contours
+</div>
 
-Дугуй хэлбэр ба доторх тодролыг шинжлэх
+### 🔬 Алгоритмын Онцлог
 
-Grid Organization
+**Paper Detection Scoring:**
+```python
+score = (area ** 0.9) × (rectangularity ** 1.4) × 
+        (angle_score ** 1.1) × (center_score ** 0.6) × 
+        (edge_penalty ** 1.8) × left_edge_bonus
+```
 
-DBSCAN-inspired logic
+**Bubble Circularity Check:**
+```python
+circularity = 4π × area / (perimeter²)
+# Шалгуур: circularity > 0.3
+```
 
-Хариултуудыг мөр, баганаар эрэмбэлэх
+**Filled Bubble Detection:**
+```python
+if min_intensity < 180:
+    confidence = 0.9
+elif min_intensity < 195 and contrast >= 5:
+    confidence = 0.85
+# ... 6 түвшний threshold
+```
 
-Variant Detection
+---
 
-ROI extraction
+## 🛠️ Тохиргоо & Параметрүүд
 
-Хувилбарын хэсгийг (ROI) тусгаарлаж таних
+### Bubble Detection Parameters
 
-Grading Logic
+```python
+# Bubble хэмжээний хязгаар
+MIN_AREA = 80        # Хамгийн бага талбай (пиксел²)
+MAX_AREA = 2500      # Хамгийн их талбай (пиксел²)
 
-NumPy & Python Dicts
+# Circularity шалгуур
+MIN_CIRCULARITY = 0.3  # Дугуй хэлбэрийн шалгуур
 
-Түлхүүр хариулттай харьцуулж оноо бодох
+# Aspect ratio
+MIN_ASPECT = 0.4      # Өргөн/өндөр хамгийн бага
+MAX_ASPECT = 2.0      # Өргөн/өндөр хамгийн их
+```
 
-🔬 Алгоритмын нарийвчлал
+### Grid Organization Parameters
 
-1. Paper Detection Scoring (Хуудас үнэлэх систем):
-Хуудасны өнцөг бүрийг дараах томьёогоор үнэлж, хамгийн зөв өнцгийг сонгодог:
+```python
+# Y-threshold тооцоолол
+y_threshold = max(18, avg_bubble_height * 0.75)
 
-score = (area ** 0.9) * (rectangularity ** 1.4) * (angle_score ** 1.1) * (center_score ** 0.6) * (edge_penalty ** 1.8) * left_edge_bonus
+# Мөрийн тоо
+TOTAL_ROWS = 25       # 25 асуултын мөр
+QUESTIONS_PER_ROW = 2 # Мөр бүрт 2 асуулт (L+R)
+TOTAL_QUESTIONS = 50  # Нийт 50 асуулт
+CHOICES_PER_Q = 5     # Асуулт бүр 5 сонголт (A-E)
+```
 
+### Region Extraction
 
-2. Bubble Validation (Хариулт баталгаажуулах):
-Зөвхөн хэлбэрээс гадна бөглөсөн эсэхийг нягтралаар шалгана:
+```python
+# Question region
+crop_y1 = int(h * 0.08)  # Top: 8%
+crop_y2 = int(h * 0.98)  # Bottom: 98%
+crop_x1 = int(w * 0.05)  # Left: 5%
+crop_x2 = int(w * 0.65)  # Right: 65%
 
-Circularity: $4\pi \times \frac{area}{perimeter^2} > 0.3$ байх ёстой.
+# Variant region
+y_start = int(h * 0.06)  # Top: 6%
+y_end = int(h * 0.22)    # Bottom: 22%
+x_start = int(w * 0.60)  # Left: 60%
+x_end = int(w * 0.92)    # Right: 92%
+```
 
-Intensity: Пикселийн дундаж утга болон контрастын харьцаагаар бөглөлтийг баталгаажуулна.
+---
 
-📋 Тайлангийн Жишээ
+## 📋 Тайлангийн Жишээ
 
-Student Report (TXT)
+### Student Report (TXT формат)
 
+```
 ================================================================================
 ✓ GRADING SUCCESSFUL
 ================================================================================
+
 STUDENT: Student_1
 VARIANT: A (VERIFIED ✓)
 SCORE: 42/50 (84.0%)
 ================================================================================
+
 SUMMARY:
   ✓ Correct:   42 (84.0%)
   ✗ Incorrect:  5 (10.0%)
   ○ Blank:      3 (6.0%)
+
+================================================================================
+
+DETAILED BREAKDOWN:
+────────────────────────────────────────────────────────────────────────────────
+Q#    Student    Correct    Status         
+────────────────────────────────────────────────────────────────────────────────
+1     A          A          ✓ correct
+2     B          B          ✓ correct
+3     C          D          ✗ incorrect
+4     -          A          ○ blank
 ...
+```
+
+### Overall Summary Statistics
+
+```
+STATISTICS:
+  Average score: 38.2/50
+  Average percentage: 76.4%
+  Highest score: 45/50 (90.0%)
+  Lowest score: 32/50 (64.0%)
+  Median score: 39.0/50
+  Standard deviation: 8.3%
+```
+![](images/result.png)
+95% танитын нарийвчлал
