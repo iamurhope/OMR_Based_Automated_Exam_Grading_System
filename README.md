@@ -5,7 +5,7 @@
 
 Компьютер хараа ашиглан тестийн хуудсыг автоматаар таньж, засах цогц систем. Тестийн хуудсыг тэгшлэх, хариулт таних, оноо тооцоолох, хувилбар шалгах зэрэг үйлдлүүдийг бүрэн автоматжуулсан.
 
-[🚀 Суулгах](#-installation) • [📖 Ажиллах зарчим](#-how-it-works) • [🎯 Онцлог](#-key-features) • [📊 Үр дүн](#-results-visualization)
+[Суулгах](#-installation) • [Ажиллах зарчим](#-how-it-works) • [Онцлог](#-key-features) • [Үр дүн](#-results-visualization)
 
 ---
 
@@ -17,7 +17,7 @@
 <tr>
 <td width="50%">
 
-### 🎯 Автомат Боловсруулалт
+### Автомат Боловсруулалт
 - ✅ **Ultra-Robust Paper Detection** - 9 өөр edge detection стратеги
 - ✅ **Perspective Transformation** - Дөрвөн цэгийн авто тэгшилгээ
 - ✅ **Auto-Rotation Detection** - 180° эргүүлэх шаардлагыг илрүүлнэ
@@ -27,34 +27,34 @@
 </td>
 <td width="50%">
 
-### 📊 Ухаалаг Илрүүлэлт
-- ✅ **50 асуултын дэмжлэг** - 25x2 багана загвар
-- ✅ **Variant Validation** - A, B, C, D, E хувилбарын авто шалгалт
-- ✅ **Bubble Detection** - Circularity & intensity шинжилгээ
-- ✅ **Grid Organization** - Y-threshold бүлэглэх алгоритм
-- ✅ **Confidence Scoring** - Итгэлцлийн түвшин хэмжих
+### Ухаалаг Илрүүлэлт
+- **50 асуултын дэмжлэг** - 25x2 багана загвар
+- **Variant Validation** - A, B, C, D, E хувилбарын авто шалгалт
+- **Bubble Detection** - Circularity & intensity шинжилгээ
+- **Grid Organization** - Y-threshold бүлэглэх алгоритм
+- **Confidence Scoring** - Итгэлцлийн түвшин хэмжих
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-### 📝 Автомат Засалт
-- ✅ **Answer Key Processing** - Хариултын загвар боловсруулах
-- ✅ **Batch Grading** - 10 хүртэл оюутныг нэгэн зэрэг засах
-- ✅ **Variant Matching** - Зөв хувилбарыг шалгаж засах
-- ✅ **Visual Feedback** - Зөв/буруу харуулсан визуал үүсгэх
-- ✅ **Detailed Reports** - TXT & JSON тайлан гаргах
+### Автомат Засалт
+- **Answer Key Processing** - Хариултын загвар боловсруулах
+- **Batch Grading** - 10 хүртэл оюутныг нэгэн зэрэг засах
+- **Variant Matching** - Зөв хувилбарыг шалгаж засах
+- **Visual Feedback** - Зөв/буруу харуулсан визуал үүсгэх
+- **Detailed Reports** - TXT & JSON тайлан гаргах
 
 </td>
 <td width="50%">
 
-### 📈 Дэлгэрэнгүй Тайлан
-- ✅ **Score Statistics** - Дундаж, медиан, std deviation
-- ✅ **Master Comparison Grid** - 3x4 харьцуулалтын график
-- ✅ **Per-Question Analysis** - Асуулт бүрийн дэлгэрэнгүй
-- ✅ **Error Detection** - Хувилбар зөрүү илрүүлэлт
-- ✅ **JSON Export** - Програмаар ашиглах боломжтой
+### Дэлгэрэнгүй Тайлан
+- **Score Statistics** - Дундаж, медиан, std deviation
+- **Master Comparison Grid** - 3x4 харьцуулалтын график
+- **Per-Question Analysis** - Асуулт бүрийн дэлгэрэнгүй
+- **Error Detection** - Хувилбар зөрүү илрүүлэлт
+- **JSON Export** - Програмаар ашиглах боломжтой
 
 </td>
 </tr>
@@ -67,18 +67,18 @@
 ```mermaid
 graph TB
     A[📷 Тестийн зураг<br/>1-11.jpg] --> B[🔧 Paper Detection<br/>9 strategies]
-    B --> C[📐 Perspective Transform<br/>4-point warping]
-    C --> D[🔄 Orientation Check<br/>180° rotation detect]
-    D --> E[✂️ Region Extraction<br/>Question + Variant areas]
-    E --> F[🎯 Bubble Detection<br/>Circularity + Intensity]
-    F --> G[📊 Grid Organization<br/>25 rows × 2 columns]
-    G --> H[🔍 Variant Detection<br/>A/B/C/D/E validation]
+    B --> C[Perspective Transform<br/>4-point warping]
+    C --> D[Orientation Check<br/>180° rotation detect]
+    D --> E[Region Extraction<br/>Question + Variant areas]
+    E --> F[Bubble Detection<br/>Circularity + Intensity]
+    F --> G[Grid Organization<br/>25 rows × 2 columns]
+    G --> H[Variant Detection<br/>A/B/C/D/E validation]
     H --> I{Variant Match?}
-    I -->|Yes| J[✅ Grade Answers<br/>Compare with key]
-    I -->|No| K[❌ Variant Mismatch<br/>Skip grading]
-    J --> L[📈 Generate Reports<br/>TXT + JSON + Images]
+    I -->|Yes| J[Grade Answers<br/>Compare with key]
+    I -->|No| K[Variant Mismatch<br/>Skip grading]
+    J --> L[Generate Reports<br/>TXT + JSON + Images]
     K --> L
-    L --> M[🎨 Master Grid<br/>3×4 comparison]
+    L --> M[Master Grid<br/>3×4 comparison]
     
     style A fill:#e1f5ff
     style B fill:#fff3e0
@@ -97,7 +97,7 @@ graph TB
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ### Шаардлагатай зүйлс
 
@@ -128,9 +128,9 @@ pip install -r requirements.txt
 
 ---
 
-## 💻 Хэрэглээ
+## Хэрэглээ
 
-### 1️⃣ Batch Processing Mode (10 оюутан нэгэн зэрэг)
+### Batch Processing Mode (10 оюутан нэгэн зэрэг)
 
 ```python
 # Зураг файлуудыг бэлтгэх
@@ -147,7 +147,7 @@ python omr_grading_system.py
 3. 10 оюутныг засна
 4. Master comparison grid үүсгэнэ
 
-### 2️⃣ Single Image Mode (Нэг оюутан засах)
+### Single Image Mode (Нэг оюутан засах)
 
 ```python
 results = batch_process_omr_with_variants(
@@ -159,7 +159,7 @@ results = batch_process_omr_with_variants(
 )
 ```
 
-### 3️⃣ Answer Key шалгах
+### Answer Key шалгах
 
 ```python
 results = batch_process_omr_with_variants(
@@ -173,7 +173,7 @@ results = batch_process_omr_with_variants(
 
 ---
 
-## 📊 Үр дүнгийн бүтэц
+## Үр дүнгийн бүтэц
 
 Програм дараах хавтас, файлуудыг үүсгэнэ:
 
@@ -200,9 +200,9 @@ omr_results/
 
 ---
 
-## 🎯 Онцлох Функцууд
+## Онцлох Функцууд
 
-### 1️⃣ Ultra-Robust Paper Detection
+### Ultra-Robust Paper Detection
 9 өөр edge detection стратеги ашиглаж тестийн хуудсыг илрүүлнэ:
 - **CLAHE enhancement** - Adaptive histogram equalization
 - **Multiple Canny edges** - 5 өөр threshold combination
@@ -217,7 +217,7 @@ score = (area ** 0.9) * (rectangularity ** 1.4) *
         (edge_penalty ** 1.8) * left_edge_bonus
 ```
 
-### 2️⃣ Intelligent Bubble Detection
+### Intelligent Bubble Detection
 Circularity болон intensity шинжилгээ:
 - **Size filtering**: 80-2500 pixels area
 - **Aspect ratio check**: 0.4-2.0 range
@@ -225,7 +225,7 @@ Circularity болон intensity шинжилгээ:
 - **Interior intensity**: Center region darkness check
 - **Duplicate removal**: Position-based filtering
 
-### 3️⃣ Grid Organization Algorithm
+### Grid Organization Algorithm
 Y-threshold ашиглан 25 мөр × 2 багана бүлэглэх:
 ```python
 y_threshold = max(18, avg_bubble_height * 0.75)
@@ -234,14 +234,14 @@ y_threshold = max(18, avg_bubble_height * 0.75)
 - Баганы ялгалт - Том зайгаар split
 - 5 сонголттой асуулт бүрээс
 
-### 4️⃣ Variant Validation System
+### Variant Validation System
 A, B, C, D, E хувилбарыг шалгаж таньж:
 - Top-right region дээр хайна
 - Contrast-based detection
 - Confidence scoring
 - **VARIANT MISMATCH DETECTION** - Буруу хувилбарыг автоматаар илрүүлнэ
 
-### 5️⃣ Orientation Detection
+### Orientation Detection
 3 voting mechanism ашиглан 180° эргэх шаардлагыг шалгана:
 - **Content density** - Top vs bottom текст хэмжээ
 - **Bubble distribution** - Хаана бөмбөлөг их байна
@@ -249,7 +249,7 @@ A, B, C, D, E хувилбарыг шалгаж таньж:
 
 ---
 
-## 📈 Технологи & Алгоритм
+## Технологи & Алгоритм
 
 <div align="center">
 
@@ -267,7 +267,7 @@ A, B, C, D, E хувилбарыг шалгаж таньж:
 
 </div>
 
-### 🔬 Алгоритмын Онцлог
+### Алгоритмын Онцлог
 
 **Paper Detection Scoring:**
 ```python
@@ -341,7 +341,7 @@ x_end = int(w * 0.92)    # Right: 92%
 
 ---
 
-## 📋 Тайлангийн Жишээ
+## Example report
 
 ### Student Report (TXT формат)
 
@@ -360,6 +360,7 @@ SUMMARY:
   ✗ Incorrect:  5 (10.0%)
   ○ Blank:      3 (6.0%)
 
+![](images/result.png)
 ================================================================================
 
 DETAILED BREAKDOWN:
@@ -384,5 +385,3 @@ STATISTICS:
   Median score: 39.0/50
   Standard deviation: 8.3%
 ```
-![](images/result.png)
-95% танитын нарийвчлал
